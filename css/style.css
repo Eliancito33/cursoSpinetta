@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.125rem;
+}
+
+main{
+    background-color: #CEAB93;
+}
+.logo img{
+    width: 6rem;
+    height: 6rem;
+    margin-left: .3125rem ;
+}
+.haderIndex{
+    display: flex;
+    justify-content: space-between;
+    background-color: #AD8B73; 
+}
+
+.navBar{
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center; 
+    padding: 1.875rem;
+    border: 1px ;
+    border-radius: 3.125rem;
+    margin-right: 1.25rem;
+    margin-top: .625rem;
+    background-color:#CEAB93;
+
+}
+.navBar a{
+    text-decoration: none;
+
+    color: #FFFBE9;
+
+}
+.navBar a:hover{
+    color: #d47e41;
+}
+
+
+.titulo h1{    
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #AD8B73;
+    padding: 1.25rem;
+    border-top:3px solid #E3CAA5 ;
+    border-bottom:3px solid #E3CAA5 ;
+    text-transform: capitalize;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    letter-spacing: .9375rem;
+}
+
+.quien h2{
+    color: #FFFBE9;
+font-size: 1.75rem ;
+padding: 1.25rem;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow: 2px 2px 4px black;
+text-align: justify;
+}
+
+.quien p{
+    color: #FFFBE9;
+font-size: 1.25rem ;
+padding: 1.25rem;
+padding-left: 2rem;
+padding-right: 2rem;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow: 2px 2px 4px black;
+text-align: justify;
+}
+.bandas h2{
+    color: #FFFBE9;
+font-size: 1.75rem ;
+padding: 1.25rem;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow: 2px 2px 4px black;
+text-align: justify;
+}
+.guardaCards{
+    display: flex;
+    flex-direction:column ;
+    padding: 40px;
+    gap: 1.25rem;
+}
+.guardaCards div{
+    width: 100%;
+    height: 20rem;
+}
+    
+.card img{
+    width: 18rem;
+    height: 18rem;
+    object-fit: contain;
+    border:2px solid #FFFBE9;
+    margin: 10px
+    
+}
+.card h3{
+    color: #FFFBE9;
+    font-size: 1.25rem;
+    padding-top: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px black;
+    text-align: justify;
+    text-decoration: underline;
+    
+
+    
+}
+
+
+.almen-card{
+    width: 31.25rem;
+    height: 43.75rem;
+}
+
+.almen-card img{
+    width: 100%;
+    height: 85%;
+    object-fit: contain;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.titex{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
+    justify-content: start;
+}
+.titex p{
+    color: #FFFBE9;
+font: size 15px; ;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow: 2px 2px 4px black;
+text-align: justify;
+}
