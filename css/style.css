@@ -1,239 +1,264 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 1.125rem;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
 }
 
-main{
-    background-color: #CEAB93;
+.haderIndex {
+  display: flex;
+  justify-content: space-between;
+  background-color: #AD8B73;
 }
-.logo img{
-    width: 6rem;
-    height: 6rem;
-    margin-left: .3125rem ;
+.haderIndex .logo img {
+  width: 6rem;
+  height: 6rem;
+  margin-left: 0.3125rem;
 }
-.haderIndex{
-    display: flex;
-    justify-content: space-between;
-    background-color: #AD8B73; 
+.haderIndex .navBar {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1.875rem;
+  border: 1px;
+  border-radius: 3.125rem;
+  margin-right: 1.25rem;
+  margin-top: 0.625rem;
+  background-color: #CEAB93;
 }
-
-.navBar{
-    list-style: none;
-    display: flex;
-    gap: 1.25rem;
-    align-items: center; 
-    padding: 1.875rem;
-    border: 1px ;
-    border-radius: 3.125rem;
-    margin-right: 1.25rem;
-    margin-top: .625rem;
-    background-color:#CEAB93;
-
+.haderIndex .navBar a {
+  text-decoration: none;
+  color: #FFFBE9;
 }
-.navBar a{
-    text-decoration: none;
-
-    color: #FFFBE9;
-
-}
-.navBar a:hover{
-    color: #d47e41;
+.haderIndex .navBar a:hover {
+  color: #d47e41;
 }
 
-
-.titulo h1{    
-    font-size: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #AD8B73;
-    padding: 1.25rem;
-    border-top:3px solid #E3CAA5 ;
-    border-bottom:3px solid #E3CAA5 ;
-    text-transform: capitalize;
-    text-align: center;
-    text-shadow: 2px 2px 4px black;
-    letter-spacing: .9375rem;
+main {
+  background-color: #CEAB93;
+}
+main .titulo h1 {
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #AD8B73;
+  padding: 1.25rem;
+  border-top: 3px solid #E3CAA5;
+  border-bottom: 3px solid #E3CAA5;
+  text-transform: capitalize;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+  letter-spacing: 0.9375rem;
+}
+main .quien h2 {
+  color: #FFFBE9;
+  font-size: 1.75rem;
+  padding: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 4px black;
+  text-align: justify;
+}
+main .quien p {
+  color: #FFFBE9;
+  font-size: 1.25rem;
+  padding: 1.25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 4px black;
+  text-align: justify;
+}
+main .bandas h2 {
+  color: #FFFBE9;
+  font-size: 1.75rem;
+  padding: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 4px black;
+  text-align: justify;
+}
+main .bandas .guardaCards {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 1.25rem;
+}
+main .bandas .guardaCards div {
+  width: 100%;
+  height: 20rem;
 }
 
-.quien h2{
-    color: #FFFBE9;
-font-size: 1.75rem ;
-padding: 1.25rem;
-font-family: Arial, Helvetica, sans-serif;
-text-shadow: 2px 2px 4px black;
-text-align: justify;
+.albumes {
+  display: grid;
+  grid-template-areas: "a1 a2 a2" "b1 b1 b2" "c1 c2 c2" "d1 d1 d2";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 0.625rem;
+  column-gap: 2.5rem;
+  padding: 1.25rem;
+  align-items: center;
 }
 
-.quien p{
-    color: #FFFBE9;
-font-size: 1.25rem ;
-padding: 1.25rem;
-padding-left: 2rem;
-padding-right: 2rem;
-font-family: Arial, Helvetica, sans-serif;
-text-shadow: 2px 2px 4px black;
-text-align: justify;
-}
-.bandas h2{
-    color: #FFFBE9;
-font-size: 1.75rem ;
-padding: 1.25rem;
-font-family: Arial, Helvetica, sans-serif;
-text-shadow: 2px 2px 4px black;
-text-align: justify;
-}
-.guardaCards{
-    display: flex;
-    flex-direction:column ;
-    padding: 40px;
-    gap: 1.25rem;
-}
-.guardaCards div{
-    width: 100%;
-    height: 20rem;
-}
-    
-.card img{
-    width: 18rem;
-    height: 18rem;
-    object-fit: contain;
-    border:2px solid #FFFBE9;
-    margin: 10px
-    
-}
-.card h3{
-    color: #FFFBE9;
-    font-size: 1.25rem;
-    padding-top: 1.25rem;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 2px 2px 4px black;
-    text-align: justify;
-    text-decoration: underline;
-    
-
-    
+#diamante {
+  grid-area: a1;
+  height: 18.75rem;
+  width: 18.75rem;
 }
 
-
-.card{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-}
-.titex{
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.25rem;
-    justify-content: start;
-}
-.titex p{
-    color: #FFFBE9;
-font: size 15px; ;
-font-family: Arial, Helvetica, sans-serif;
-text-shadow: 2px 2px 4px black;
-text-align: justify;
+div #albumDiamante {
+  grid-area: a2;
 }
 
-.albumes{
-    display: grid;
-    grid-template-areas: 
-    "a1 a2 a2"
-    "b1 b1 b2"
-    "c1 c2 c2"
-    "d1 d1 d2"
-    ;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto;
-    row-gap: .625rem;
-    
-    column-gap: 1.25rem;
-    padding: 1.25rem;
-    align-items: center;
-
+#albumCielo {
+  grid-area: b1;
 }
 
-#diamante{
-    grid-area: a1;
-    height: 18.75rem;
-    width: 18.75rem;
-       
-}
-div #albumDiamante{
-    grid-area: a2;
-}
-#albumCielo{
-    grid-area: b1;
-}
-#cielo{
-    grid-area: b2;
-    height: 18.75rem;
-    width: 18.75rem;
-
-}
-#belgrano{
-    grid-area: c1;
-    height: 18.75rem;
-    width: 18.75rem;
-
-}
-#albumBelgrano{
-    grid-area: c2;
-
-}
-#albumMadre{
-    grid-area: d1;
-}
-#madre{
-    grid-area: d2;
-    height: 18.75rem;
-    width: 18.75rem;
-
-}
-#sectionDesierto{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
-    text-align: center;
-    padding: 1.875rem;
-    
+#cielo {
+  grid-area: b2;
+  height: 18.75rem;
+  width: 18.75rem;
 }
 
-.albumDesierto{
-    height: 43.75rem;
-    width: 43.75rem;
-}
-.albumDesierto img{
-    height: 50%;
-    width: 100%;
-    object-fit: contain;    
+#belgrano {
+  grid-area: c1;
+  height: 18.75rem;
+  width: 18.75rem;
 }
 
-.h3Desierto{
-    color: #FFFBE9;
-    font-size: 1.25rem;
-    padding-top: 1.25rem;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 2px 2px 4px black;
-    text-align: justify;
-    text-decoration: underline;
-}
-.pDesierto{
-    color: #FFFBE9;
-font: size 15px; ;
-font-family: Arial, Helvetica, sans-serif;
-text-shadow: 2px 2px 4px black;
-text-align: justify; 
+#albumBelgrano {
+  grid-area: c2;
 }
 
-.titex button{
-    width: 18.75rem;
-    background-color:#AD8B73;
-    border: 2px solid #E3CAA5;
-
+#albumMadre {
+  grid-area: d1;
 }
-.titex button a{
-    text-decoration: none;
 
+#madre {
+  grid-area: d2;
+  height: 18.75rem;
+  width: 18.75rem;
 }
+
+#sectionDesierto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding: 1.875rem;
+}
+
+.albumDesierto {
+  height: 43.75rem;
+  width: 43.75rem;
+}
+
+.albumDesierto img {
+  height: 50%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.h3Desierto {
+  color: #FFFBE9;
+  font-size: 1.25rem;
+  padding-top: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 4px black;
+  text-align: justify;
+  text-decoration: underline;
+}
+
+.pDesierto {
+  color: #FFFBE9;
+  font: size 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 4px black;
+  text-align: justify;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.875rem;
+  /* ----------------------------------------------
+  * Generated by Animista on 2025-2-20 2:54:59
+  * Licensed under FreeBSD License.
+  * See http://animista.net/license for more info. 
+  * w: http://animista.net, t: @cssanimista
+  * ---------------------------------------------- */
+  /**
+   * ----------------------------------------
+   * animation text-focus-in
+   * ----------------------------------------
+   */
+}
+.card img {
+  width: 18rem;
+  height: 18rem;
+  object-fit: contain;
+  border: 2px solid #FFFBE9;
+  margin: 10px;
+}
+.card img:hover {
+  transform: scale(1.2);
+}
+.card h3 {
+  color: #FFFBE9;
+  font-size: 1.25rem;
+  padding-top: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 4px black;
+  text-align: justify;
+  text-decoration: underline;
+}
+.card .p-ani {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.card .titex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+  justify-content: start;
+}
+.card .titex p {
+  color: #FFFBE9;
+  font: size 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 4px black;
+  text-align: justify;
+}
+.card .titex button {
+  width: 18.75rem;
+  background-color: #AD8B73;
+  border: 2px solid #E3CAA5;
+}
+.card .titex button a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

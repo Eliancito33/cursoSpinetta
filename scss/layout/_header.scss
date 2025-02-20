@@ -1,0 +1,33 @@
+.haderIndex{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #AD8B73; 
+    .logo{
+        img{
+            width: 6rem;
+            height: 6rem;
+            margin-left: .3125rem ;
+        }     
+    }
+    .navBar{
+        list-style: none;
+        display: flex;
+        gap: 1.25rem;
+        align-items: center; 
+        padding: 1.875rem;
+        border: 1px ;
+        border-radius: 3.125rem;
+        margin-right: 1.25rem;
+        margin-top: .625rem;
+        background-color:#CEAB93;
+        a{
+            text-decoration: none;        
+            color: #FFFBE9;   
+            &:hover{
+                color: #d47e41;
+            }     
+        }
+       
+    }
+}
